@@ -42,7 +42,7 @@ export default function Home() {
     const filtered =
       news.filter(
         (article) =>
-          article.urlToImage &&
+          article.image &&
           article.description
       );
 

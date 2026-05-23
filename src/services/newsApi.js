@@ -1,16 +1,28 @@
 const API_KEY =
-  import.meta.env.VITE_NEWS_API_KEY;
+  import.meta.env.VITE_GNEWS_API_KEY;
 
 const BASE_URL =
-  "https://newsapi.org/v2/everything?q=";
+  "https://gnews.io/api/v4/search?q=";
 
 export async function fetchNews(query) {
 
-  const response = await fetch(
-    `${BASE_URL}${query}&sortBy=publishedAt&language=en&pageSize=30&apiKey=${API_KEY}`
-  );
+  try {
 
-  const data = await response.json();
+    const response = await fetch(
+      `${BASE_URL}${encodeURIComponent(query)}&lang=en&max=25&apikey=${API_KEY}`
+    );
 
-  return data.articles || [];
+    const data =
+      await response.json();
+
+    console.log(data);
+
+    return data.articles || [];
+
+  } catch (error) {
+
+    console.error(error);
+
+    return [];
+  }
 }

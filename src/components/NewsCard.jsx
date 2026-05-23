@@ -17,7 +17,7 @@ export default function NewsCard({
       <div className="card-image">
 
         <img
-          src={article.urlToImage}
+          src={article.image}
           alt="news"
         />
 
