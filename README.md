@@ -4,6 +4,8 @@ A modern, responsive and production-ready AI-inspired news platform built using 
 
 The platform delivers real-time news across technology, business, finance, sports, politics and global affairs with a clean and distraction-free reading experience.
 
+Checkout the backend repo - https://github.com/smitroy4/headlineHub-backend
+
 ---
 
 # Live Demo
