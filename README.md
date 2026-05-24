@@ -10,8 +10,6 @@ Checkout the backend repo - https://github.com/smitroy4/headlineHub-backend
 
 # Live Demo
 
-Add your deployed frontend URL here:
-
 ```bash
 https://headline-hub-five.vercel.app/
 ```
@@ -20,7 +18,6 @@ https://headline-hub-five.vercel.app/
 
 # Backend API
 
-Add your deployed backend URL here:
 
 ```bash
 https://headlinehub-backend.onrender.com/
